@@ -57,7 +57,7 @@ RUN cd /usr/src/phantomjs \
 	&& apk del .build-deps \
 	&& rm -r /*.patch /usr/src
 
-RUN apk add patchelf --update-cache --repository http://dl-3.alpinelinux.org/alpine/edge/testing/ --allow-untrusted
+RUN apk add patchelf --update-cache --repository http://dl-3.alpinelinux.org/alpine/edge/community/ --allow-untrusted
 
 # package binary build
 RUN cd /root \
